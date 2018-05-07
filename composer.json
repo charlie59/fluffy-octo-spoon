@@ -24,6 +24,7 @@
         "drupal/core": "~8.5",
         "drupal/features": "^3.7",
         "drupal/pathauto": "^1.1",
+        "drupal/social_media": "^1.3",
         "drush/drush": "^9.2",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
