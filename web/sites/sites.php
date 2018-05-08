@@ -10,3 +10,7 @@ $sites['myfamilydocga.com'] = "myfamilydocga.etypegoogle11.com";
 $sites['taniafrench.etypegoogle11.com'] = "taniafrench.etypegoogle11.com";
 $sites['www.taniafrench.com'] = "taniafrench.etypegoogle11.com";
 $sites['taniafrench.com'] = "taniafrench.etypegoogle11.com";
+
+$sites['netxcrossroads.etypegoogle11.com'] = "netxcrossroads.etypegoogle11.com";
+$sites['www.netxcrossroads.com'] = "netxcrossroads.etypegoogle11.com";
+$sites['netxcrossroads.com'] = "netxcrossroads.etypegoogle11.com";
