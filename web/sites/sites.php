@@ -14,3 +14,7 @@ $sites['taniafrench.com'] = "taniafrench.etypegoogle11.com";
 $sites['netxcrossroads.etypegoogle11.com'] = "netxcrossroads.etypegoogle11.com";
 $sites['www.netxcrossroads.com'] = "netxcrossroads.etypegoogle11.com";
 $sites['netxcrossroads.com'] = "netxcrossroads.etypegoogle11.com";
+
+$sites['bellvilletimes.etypegoogle11.com'] = "bellvilletimes.etypegoogle11.com";
+$sites['www.bellvilletimes.com'] = "bellvilletimes.etypegoogle11.com";
+$sites['bellvilletimes.com'] = "bellvilletimes.etypegoogle11.com";
