@@ -18,3 +18,7 @@ $sites['netxcrossroads.com'] = "netxcrossroads.etypegoogle11.com";
 $sites['bellvilletimes.etypegoogle11.com'] = "bellvilletimes.etypegoogle11.com";
 $sites['www.bellvilletimes.com'] = "bellvilletimes.etypegoogle11.com";
 $sites['bellvilletimes.com'] = "bellvilletimes.etypegoogle11.com";
+
+$sites['66hoursingrants.etypegoogle11.com'] = "66hoursingrants.etypegoogle11.com";
+$sites['www.66hoursingrants.com'] = "66hoursingrants.etypegoogle11.com";
+$sites['66hoursingrants.com'] = "66hoursingrants.etypegoogle11.com";
