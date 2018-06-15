@@ -50,3 +50,23 @@ $sites['bayoujournal.com'] = "bayoujournal.etypegoogle11.com";
 $sites['sabinecountyreporter.etypegoogle11.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['www.sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
+
+$sites['themillerpress.etypegoogle11.com'] = "themillerpress.etypegoogle11.com";
+$sites['www.themillerpress.com'] = "themillerpress.etypegoogle11.com";
+$sites['themillerpress.com'] = "themillerpress.etypegoogle11.com";
+
+$sites['theravennanews.etypegoogle11.com'] = "theravennanews.etypegoogle11.com";
+$sites['www.theravennanews.com'] = "theravennanews.etypegoogle11.com";
+$sites['theravennanews.com'] = "theravennanews.etypegoogle11.com";
+
+$sites['thekansascityglobe.etypegoogle11.com'] = "thekansascityglobe.etypegoogle11.com";
+$sites['www.thekansascityglobe.com'] = "thekansascityglobe.etypegoogle11.com";
+$sites['thekansascityglobe.com'] = "thekansascityglobe.etypegoogle11.com";
+
+$sites['phonographherald.etypegoogle11.com'] = "phonographherald.etypegoogle11.com";
+$sites['www.phonographherald.com'] = "phonographherald.etypegoogle11.com";
+$sites['phonographherald.com'] = "phonographherald.etypegoogle11.com";
+
+$sites['phonographherald.etypegoogle11.com'] = "phonographherald.etypegoogle11.com";
+$sites['www.phonographherald.com'] = "phonographherald.etypegoogle11.com";
+$sites['phonographherald.com'] = "phonographherald.etypegoogle11.com";
