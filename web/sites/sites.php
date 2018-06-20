@@ -63,6 +63,11 @@ $sites['thekansascityglobe.etypegoogle11.com'] = "thekansascityglobe.etypegoogle
 $sites['www.thekansascityglobe.com'] = "thekansascityglobe.etypegoogle11.com";
 $sites['thekansascityglobe.com'] = "thekansascityglobe.etypegoogle11.com";
 
+$sites['thekcglobe.etypegoogle11.com'] = "thekansascityglobe.etypegoogle11.com";
+$sites['www.thekcglobe.com'] = "thekansascityglobe.etypegoogle11.com";
+$sites['thekcglobe.com'] = "thekansascityglobe.etypegoogle11.com";
+
+
 $sites['phonographherald.etypegoogle11.com'] = "phonographherald.etypegoogle11.com";
 $sites['www.phonographherald.com'] = "phonographherald.etypegoogle11.com";
 $sites['phonographherald.com'] = "phonographherald.etypegoogle11.com";
