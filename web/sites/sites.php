@@ -67,11 +67,22 @@ $sites['thekcglobe.etypegoogle11.com'] = "thekansascityglobe.etypegoogle11.com";
 $sites['www.thekcglobe.com'] = "thekansascityglobe.etypegoogle11.com";
 $sites['thekcglobe.com'] = "thekansascityglobe.etypegoogle11.com";
 
-
 $sites['phonographherald.etypegoogle11.com'] = "phonographherald.etypegoogle11.com";
 $sites['www.phonographherald.com'] = "phonographherald.etypegoogle11.com";
 $sites['phonographherald.com'] = "phonographherald.etypegoogle11.com";
 
-$sites['phonographherald.etypegoogle11.com'] = "phonographherald.etypegoogle11.com";
-$sites['www.phonographherald.com'] = "phonographherald.etypegoogle11.com";
-$sites['phonographherald.com'] = "phonographherald.etypegoogle11.com";
+$sites['edenecho.etypegoogle11.com'] = "edenecho.etypegoogle11.com";
+$sites['www.edenecho.net'] = "edenecho.etypegoogle11.com";
+$sites['edenecho.net'] = "edenecho.etypegoogle11.com";
+
+$sites['normangeestar.etypegoogle11.com'] = "normangeestar.etypegoogle11.com";
+$sites['www.normangeestar.com'] = "normangeestar.etypegoogle11.com";
+$sites['normangeestar.com'] = "normangeestar.etypegoogle11.com";
+
+$sites['lulingnewsboy.etypegoogle11.com'] = "lulingnewsboy.etypegoogle11.com";
+$sites['www.lulingnewsboy.com'] = "lulingnewsboy.etypegoogle11.com";
+$sites['lulingnewsboy.com'] = "lulingnewsboy.etypegoogle11.com";
+
+$sites['lavacacountytoday.etypegoogle11.com'] = "lavacacountytoday.etypegoogle11.com";
+$sites['www.lavacacountytoday.com'] = "lavacacountytoday.etypegoogle11.com";
+$sites['lavacacountytoday.com'] = "lavacacountytoday.etypegoogle11.com";
