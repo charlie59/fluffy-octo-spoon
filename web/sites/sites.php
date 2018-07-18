@@ -86,3 +86,11 @@ $sites['lulingnewsboy.com'] = "lulingnewsboy.etypegoogle11.com";
 $sites['lavacacountytoday.etypegoogle11.com'] = "lavacacountytoday.etypegoogle11.com";
 $sites['www.lavacacountytoday.com'] = "lavacacountytoday.etypegoogle11.com";
 $sites['lavacacountytoday.com'] = "lavacacountytoday.etypegoogle11.com";
+
+$sites['whitneytheatre.etypegoogle11.com'] = "whitneytheatre.etypegoogle11.com";
+$sites['www.whitneytheatre.com'] = "whitneytheatre.etypegoogle11.com";
+$sites['whitneytheatre.com'] = "whitneytheatre.etypegoogle11.com";
+
+$sites['texas-grass.etypegoogle11.com'] = "texas-grass.etypegoogle11.com";
+$sites['www.texas-grass.com'] = "texas-grass.etypegoogle11.com";
+$sites['texas-grass.com'] = "texas-grass.etypegoogle11.com";
