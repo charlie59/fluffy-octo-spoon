@@ -94,3 +94,7 @@ $sites['whitneytheatre.com'] = "whitneytheatre.etypegoogle11.com";
 $sites['texas-grass.etypegoogle11.com'] = "texas-grass.etypegoogle11.com";
 $sites['www.texas-grass.com'] = "texas-grass.etypegoogle11.com";
 $sites['texas-grass.com'] = "texas-grass.etypegoogle11.com";
+
+$sites['bookernews.etypegoogle11.com'] = "bookernews.etypegoogle11.com";
+$sites['www.bookernews.com'] = "bookernews.etypegoogle11.com";
+$sites['bookernews.com'] = "bookernews.etypegoogle11.com";
