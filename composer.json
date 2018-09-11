@@ -21,6 +21,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/clamav": "^1.0",
         "drupal/console": "^1.0.2",
+        "drupal/contact_block": "^1.4",
         "drupal/core": "~8.5",
         "drupal/exclude_node_title": "^1.0",
         "drupal/features": "^3.7",
