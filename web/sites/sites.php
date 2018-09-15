@@ -102,6 +102,8 @@ $sites['bookernews.com'] = "bookernews.etypegoogle11.com";
 $sites['wespubco.etypegoogle11.com'] = "wespubco.etypegoogle11.com";
 $sites['www.wespubco.com'] = "wespubco.etypegoogle11.com";
 $sites['wespubco.com'] = "wespubco.etypegoogle11.com";
+$sites['www.wesnerpublications.com'] = "wespubco.etypegoogle11.com";
+$sites['wesnerpublications.com'] = "wespubco.etypegoogle11.com";
 
 $sites['mosercommedia.etypegoogle11.com'] = "mosercommedia.etypegoogle11.com";
 $sites['www.mosercommedia.com'] = "mosercommedia.etypegoogle11.com";
