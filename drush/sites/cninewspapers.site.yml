@@ -1,0 +1,4 @@
+File: cninewspapers.site.yml
+live:
+  root: /data/web/public/drupal-composer-build
+  uri: http://www.cninewspapers.com
