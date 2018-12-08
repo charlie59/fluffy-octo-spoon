@@ -110,3 +110,17 @@ $sites['www.mosercommedia.com'] = "mosercommedia.etypegoogle11.com";
 $sites['mosercommedia.com'] = "mosercommedia.etypegoogle11.com";
 
 $sites['giddingstimes.etypegoogle11.com'] = "giddingstimes.etypegoogle11.com";
+$sites['www.giddingstimes.com'] = "giddingstimes.etypegoogle11.com";
+$sites['giddingstimes.com'] = "giddingstimes.etypegoogle11.com";
+
+$sites['colfaxchronicle.etypegoogle11.com'] = "colfaxchronicle.etypegoogle11.com";
+$sites['www.colfaxchronicle.com'] = "colfaxchronicle.etypegoogle11.com";
+$sites['colfaxchronicle.com'] = "colfaxchronicle.etypegoogle11.com";
+
+$sites['columbusnews-report.etypegoogle11.com'] = "columbusnews-report.etypegoogle11.com";
+$sites['www.columbusnews-report.com'] = "columbusnews-report.etypegoogle11.com";
+$sites['columbusnews-report.com'] = "columbusnews-report.etypegoogle11.com";
+
+$sites['rileycountian.etypegoogle11.com'] = "rileycountian.etypegoogle11.com";
+$sites['www.rileycountian.com'] = "rileycountian.etypegoogle11.com";
+$sites['rileycountian.com'] = "rileycountian.etypegoogle11.com";
