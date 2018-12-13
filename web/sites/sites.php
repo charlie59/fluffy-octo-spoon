@@ -124,3 +124,7 @@ $sites['columbusnews-report.com'] = "columbusnews-report.etypegoogle11.com";
 $sites['rileycountian.etypegoogle11.com'] = "rileycountian.etypegoogle11.com";
 $sites['www.rileycountian.com'] = "rileycountian.etypegoogle11.com";
 $sites['rileycountian.com'] = "rileycountian.etypegoogle11.com";
+
+$sites['ung.etypegoogle11.com'] = "ung.etypegoogle11.com";
+$sites['www.unwindnorthgeorgia.com'] = "ung.etypegoogle11.com";
+$sites['unwindnorthgeorgia.com'] = "ung.etypegoogle11.com";
