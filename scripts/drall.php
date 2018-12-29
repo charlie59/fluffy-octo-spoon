@@ -8,7 +8,7 @@ $argv = $_SERVER['argv'];
 
 array_shift($_SERVER['argv']);
 $parameters = implode(' ', $_SERVER['argv']);
-$commandPattern = "../vendor/drush/drush/drush --uri=:key $parameters";
+$commandPattern = "vendor/drush/drush/drush --uri=:key $parameters";
 
 foreach ($sites as $key => $site) {
 
