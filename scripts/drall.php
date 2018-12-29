@@ -13,7 +13,6 @@ $commandPattern = "vendor/drush/drush/drush --uri=:key $parameters";
 foreach ($sites as $key => $site) {
 
     if (!in_array($site, $control)) {
-        $control[] = $site;
 
         if (count($argv) > 1 && !in_array($site, $done)) {
 
