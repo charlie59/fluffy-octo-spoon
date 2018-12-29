@@ -12,16 +12,12 @@ $commandPattern = "drush --uri=:key $parameters";
 
 foreach ($sites as $key => $site) {
 
-    if (!in_array($site, $control)) {
+    if (count($argv) > 1 && !in_array($site, $done)) {
 
-        if (count($argv) > 1 && !in_array($site, $done)) {
-
-            $command = str_replace(':key', $key, $commandPattern);
-            echo "Executing command `$command` on $site\n";
-            `$command`;
-            $done[] = $site;
-        }
-
+        $command = str_replace(':key', $key, $commandPattern);
+        echo "Executing command `$command` on $site\n";
+        `$command`;
+        $done[] = $site;
     }
 
 }
