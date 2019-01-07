@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?php
-
 // Path to sites.php file.
 include(__DIR__ . '/../web/sites/sites.php');
 $done = [];
