@@ -128,3 +128,7 @@ $sites['rileycountian.com'] = "rileycountian.etypegoogle11.com";
 $sites['unwindnorthgeorgia.etypegoogle11.com'] = "ung.etypegoogle11.com";
 $sites['www.unwindnorthgeorgia.com'] = "ung.etypegoogle11.com";
 $sites['unwindnorthgeorgia.com'] = "ung.etypegoogle11.com";
+
+$sites['oakdaletoday.etypegoogle11.com'] = "oakdaletoday.etypegoogle11.com";
+$sites['www.oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
+$sites['oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
