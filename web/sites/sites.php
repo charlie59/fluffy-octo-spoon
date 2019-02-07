@@ -132,3 +132,7 @@ $sites['unwindnorthgeorgia.com'] = "ung.etypegoogle11.com";
 $sites['oakdaletoday.etypegoogle11.com'] = "oakdaletoday.etypegoogle11.com";
 $sites['www.oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
 $sites['oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
+
+$sites['taylornews.etypegoogle11.com'] = "taylornews.etypegoogle11.com";
+$sites['www.taylornews.org'] = "taylornews.etypegoogle11.com";
+$sites['taylornews.org'] = "taylornews.etypegoogle11.com";
