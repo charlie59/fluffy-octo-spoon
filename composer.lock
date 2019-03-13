@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4ff59f634ab2ce4f48e8187c66a0f63f",
+    "content-hash": "aef9ef4923137b22a48c477ddda94727",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2795,6 +2795,73 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ctools",
                 "issues": "https://www.drupal.org/project/issues/ctools"
+            }
+        },
+        {
+            "name": "drupal/dfp",
+            "version": "1.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dfp",
+                "reference": "8.x-1.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dfp-8.x-1.0-alpha1.zip",
+                "reference": "8.x-1.0-alpha1",
+                "shasum": "8122eab5846962e9cfa36c531ec4b55fae441358"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1",
+                    "datestamp": "1539596280",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "alexpott",
+                    "homepage": "https://www.drupal.org/user/157725"
+                },
+                {
+                    "name": "bleen",
+                    "homepage": "https://www.drupal.org/user/77375"
+                },
+                {
+                    "name": "davidgrayston",
+                    "homepage": "https://www.drupal.org/user/1710528"
+                },
+                {
+                    "name": "hansyg",
+                    "homepage": "https://www.drupal.org/user/176893"
+                },
+                {
+                    "name": "marcelovani",
+                    "homepage": "https://www.drupal.org/user/854220"
+                },
+                {
+                    "name": "scottalan",
+                    "homepage": "https://www.drupal.org/user/378998"
+                }
+            ],
+            "description": "Integrates DFP Google Publisher Tags onto a site.",
+            "homepage": "https://www.drupal.org/project/dfp",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dfp"
             }
         },
         {
@@ -8918,7 +8985,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "drupal/dfp": 15
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],

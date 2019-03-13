@@ -136,3 +136,11 @@ $sites['oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
 $sites['taylornews.etypegoogle11.com'] = "taylornews.etypegoogle11.com";
 $sites['www.taylornews.org'] = "taylornews.etypegoogle11.com";
 $sites['taylornews.org'] = "taylornews.etypegoogle11.com";
+
+$sites['runwithsam.etypegoogle11.com'] = "runwithsam.etypegoogle11.com";
+$sites['www.runwithsam.org'] = "runwithsam.etypegoogle11.com";
+$sites['runwithsam.org'] = "runwithsam.etypegoogle11.com";
+
+$sites['chevroletalto.etypegoogle11.com'] = "chevroletalto.etypegoogle11.com";
+$sites['www.chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
+$sites['chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
