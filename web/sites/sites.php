@@ -144,3 +144,15 @@ $sites['runwithsam.org'] = "runwithsam.etypegoogle11.com";
 $sites['chevroletalto.etypegoogle11.com'] = "chevroletalto.etypegoogle11.com";
 $sites['www.chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
 $sites['chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
+
+$sites['belleplainenews.etypegoogle11.com'] = "belleplainenews.etypegoogle11.com";
+$sites['www.belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
+$sites['belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
+
+$sites['seminoleproducer.etypegoogle11.com'] = "seminoleproducer.etypegoogle11.com";
+$sites['www.seminoleproducer.com'] = "seminoleproducer.etypegoogle11.com";
+$sites['seminoleproducer.com'] = "seminoleproducer.etypegoogle11.com";
+
+$sites['lakelife.etypegoogle11.com'] = "lakelife.etypegoogle11.com";
+$sites['www.lakelife.today'] = "lakelife.etypegoogle11.com";
+$sites['lakelife.today'] = "lakelife.etypegoogle11.com";
