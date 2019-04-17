@@ -43,10 +43,6 @@ $sites['westcarrollgazette.etypegoogle11.com'] = "westcarrollgazette.etypegoogle
 $sites['www.westcarrollgazette.com'] = "westcarrollgazette.etypegoogle11.com";
 $sites['westcarrollgazette.com'] = "westcarrollgazette.etypegoogle11.com";
 
-$sites['bayoujournal.etypegoogle11.com'] = "bayoujournal.etypegoogle11.com";
-$sites['www.bayoujournal.com'] = "bayoujournal.etypegoogle11.com";
-$sites['bayoujournal.com'] = "bayoujournal.etypegoogle11.com";
-
 $sites['sabinecountyreporter.etypegoogle11.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['www.sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
