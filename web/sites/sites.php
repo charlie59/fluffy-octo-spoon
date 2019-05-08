@@ -152,3 +152,15 @@ $sites['seminoleproducer.com'] = "seminoleproducer.etypegoogle11.com";
 $sites['lakelife.etypegoogle11.com'] = "lakelife.etypegoogle11.com";
 $sites['www.lakelife.today'] = "lakelife.etypegoogle11.com";
 $sites['lakelife.today'] = "lakelife.etypegoogle11.com";
+
+$sites['wewokatimes.etypegoogle11.com'] = "wewokatimes.etypegoogle11.com";
+$sites['www.thewewokatimes.com'] = "wewokatimes.etypegoogle11.com";
+$sites['thewewokatimes.com'] = "wewokatimes.etypegoogle11.com";
+
+$sites['konawaleader.etypegoogle11.com'] = "konawaleader.etypegoogle11.com";
+$sites['www.konawaleader.com'] = "konawaleader.etypegoogle11.com";
+$sites['konawaleader.com'] = "konawaleader.etypegoogle11.com";
+
+$sites['theanahuacprogress.etypegoogle11.com'] = "theanahuacprogress.etypegoogle11.com";
+$sites['www.theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
+$sites['theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
