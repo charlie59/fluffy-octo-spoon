@@ -37,6 +37,7 @@
         "drupal/clamav": "^1.0",
         "drupal/console": "^1.0.2",
         "drupal/contact_block": "^1.4",
+        "drupal/contest": "^1.0@alpha",
         "drupal/core": "~8.5",
         "drupal/dfp": "^1.0@alpha",
         "drupal/exclude_node_title": "^1.0",

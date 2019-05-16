@@ -145,17 +145,12 @@ $sites['belleplainenews.etypegoogle11.com'] = "belleplainenews.etypegoogle11.com
 $sites['www.belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
 $sites['belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
 
-$sites['seminoleproducer.etypegoogle11.com'] = "seminoleproducer.etypegoogle11.com";
-$sites['www.seminoleproducer.com'] = "seminoleproducer.etypegoogle11.com";
-$sites['seminoleproducer.com'] = "seminoleproducer.etypegoogle11.com";
-
 $sites['lakelife.etypegoogle11.com'] = "lakelife.etypegoogle11.com";
 $sites['www.lakelife.today'] = "lakelife.etypegoogle11.com";
 $sites['lakelife.today'] = "lakelife.etypegoogle11.com";
 
-$sites['wewokatimes.etypegoogle11.com'] = "wewokatimes.etypegoogle11.com";
-$sites['www.thewewokatimes.com'] = "wewokatimes.etypegoogle11.com";
-$sites['thewewokatimes.com'] = "wewokatimes.etypegoogle11.com";
+$sites['www.thewewokatimes.com'] = "thewewokatimes.etypegoogle11.com";
+$sites['thewewokatimes.com'] = "thewewokatimes.etypegoogle11.com";
 
 $sites['konawaleader.etypegoogle11.com'] = "konawaleader.etypegoogle11.com";
 $sites['www.konawaleader.com'] = "konawaleader.etypegoogle11.com";
