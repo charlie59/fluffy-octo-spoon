@@ -159,3 +159,7 @@ $sites['konawaleader.com'] = "konawaleader.etypegoogle11.com";
 $sites['theanahuacprogress.etypegoogle11.com'] = "theanahuacprogress.etypegoogle11.com";
 $sites['www.theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
 $sites['theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
+
+$sites['cantonguide.etypegoogle11.com'] = "cantonguide.etypegoogle11.com";
+$sites['www.cantonguide.com'] = "cantonguide.etypegoogle11.com";
+$sites['cantonguide.com'] = "cantonguide.etypegoogle11.com";
