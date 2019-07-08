@@ -44,6 +44,7 @@
         "drupal/features": "^3.7",
         "drupal/flexslider": "^2.0",
         "drupal/google_analytics": "^2.2",
+        "drupal/header_and_footer_scripts": "^2.2",
         "drupal/imce": "^1.7",
         "drupal/pathauto": "^1.1",
         "drupal/recaptcha": "^2.3",
