@@ -43,10 +43,6 @@ $sites['westcarrollgazette.etypegoogle11.com'] = "westcarrollgazette.etypegoogle
 $sites['www.westcarrollgazette.com'] = "westcarrollgazette.etypegoogle11.com";
 $sites['westcarrollgazette.com'] = "westcarrollgazette.etypegoogle11.com";
 
-$sites['bayoujournal.etypegoogle11.com'] = "bayoujournal.etypegoogle11.com";
-$sites['www.bayoujournal.com'] = "bayoujournal.etypegoogle11.com";
-$sites['bayoujournal.com'] = "bayoujournal.etypegoogle11.com";
-
 $sites['sabinecountyreporter.etypegoogle11.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['www.sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
 $sites['sabinecountyreporter.com'] = "sabinecountyreporter.etypegoogle11.com";
@@ -136,3 +132,34 @@ $sites['oakdaletoday.com'] = "oakdaletoday.etypegoogle11.com";
 $sites['taylornews.etypegoogle11.com'] = "taylornews.etypegoogle11.com";
 $sites['www.taylornews.org'] = "taylornews.etypegoogle11.com";
 $sites['taylornews.org'] = "taylornews.etypegoogle11.com";
+
+$sites['runwithsam.etypegoogle11.com'] = "runwithsam.etypegoogle11.com";
+$sites['www.runwithsam.org'] = "runwithsam.etypegoogle11.com";
+$sites['runwithsam.org'] = "runwithsam.etypegoogle11.com";
+
+$sites['chevroletalto.etypegoogle11.com'] = "chevroletalto.etypegoogle11.com";
+$sites['www.chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
+$sites['chevroletalto.com'] = "chevroletalto.etypegoogle11.com";
+
+$sites['belleplainenews.etypegoogle11.com'] = "belleplainenews.etypegoogle11.com";
+$sites['www.belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
+$sites['belleplainenews.com'] = "belleplainenews.etypegoogle11.com";
+
+$sites['lakelife.etypegoogle11.com'] = "lakelife.etypegoogle11.com";
+$sites['www.lakelife.today'] = "lakelife.etypegoogle11.com";
+$sites['lakelife.today'] = "lakelife.etypegoogle11.com";
+
+$sites['www.thewewokatimes.com'] = "thewewokatimes.etypegoogle11.com";
+$sites['thewewokatimes.com'] = "thewewokatimes.etypegoogle11.com";
+
+$sites['konawaleader.etypegoogle11.com'] = "konawaleader.etypegoogle11.com";
+$sites['www.konawaleader.com'] = "konawaleader.etypegoogle11.com";
+$sites['konawaleader.com'] = "konawaleader.etypegoogle11.com";
+
+$sites['theanahuacprogress.etypegoogle11.com'] = "theanahuacprogress.etypegoogle11.com";
+$sites['www.theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
+$sites['theanahuacprogress.com'] = "theanahuacprogress.etypegoogle11.com";
+
+$sites['cantonguide.etypegoogle11.com'] = "cantonguide.etypegoogle11.com";
+$sites['www.cantonguide.com'] = "cantonguide.etypegoogle11.com";
+$sites['cantonguide.com'] = "cantonguide.etypegoogle11.com";
