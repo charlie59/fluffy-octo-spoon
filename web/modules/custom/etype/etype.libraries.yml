@@ -1,0 +1,29 @@
+etype:
+  version: VERSION
+  js:
+    js/etype.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+etype-video:
+  version: VERSION
+  js:
+    js/etype_video.js:
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+
+global-styling:
+  version: VERSION
+  css:
+    state:
+      css/etype.css: {}
+
+ada-compliance:
+  version: VERSION
+  header: true
+  js:
+    js/ada_compliance.js: {}

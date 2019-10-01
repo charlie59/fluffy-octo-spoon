@@ -1,0 +1,39 @@
+etype_wire_content.admin_settings:
+  path: '/admin/config/etype_wire_content/admin_settings'
+  defaults:
+    _form: '\Drupal\etype_wire_content\Form\EtypeWireContentConfigForm'
+    _title: 'eType Wire Content Configuration'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+etype_wire_content.admin_settings.global:
+  path: '/admin/config/etype_wire_content/admin_settings/global'
+  defaults:
+    _form: '\Drupal\etype_wire_content\Form\EtypeWireContentGlobalConfigForm'
+    _title: 'eType Wire Content Global Configuration'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+etype_wire_content.export_wire_content:
+  path: '/admin/content/export_wire_content'
+  defaults:
+    _title: 'Export Wire Content'
+    _controller: '\Drupal\etype_wire_content\Controller\WireContentExportController::exportWireContent'
+  requirements:
+    _permission: 'access wire content'
+  options:
+    _admin_route: TRUE
+
+etype_wire_content.add_wire_content:
+  path: '/admin/content/add_wire_content/{nid}'
+  defaults:
+    _title: 'Add Wire Content'
+    _controller: '\Drupal\etype_wire_content\Controller\WireContentAddController::addWireContent'
+  requirements:
+    _permission: 'access wire content'
+  options:
+    _admin_route: TRUE

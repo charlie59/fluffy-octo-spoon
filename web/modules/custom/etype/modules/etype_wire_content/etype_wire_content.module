@@ -1,0 +1,27 @@
+<?php
+/**
+ * @file
+ * eType Wire Content module file.
+ */
+
+use Drupal\Core\Database\Database;
+
+/**
+ * Callback function for the cron job.
+ *
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function _etype_wire_content_node_export() {
+  $job = new Drupal\etype_wire_content\Controller\WireContentExportController;
+  $job->exportWireContent();
+}
+
+/**
+ * Check database settings exist.
+ *
+ * @return bool
+ */
+function _etype_wire_content_check_connection() {
+  return (bool) Database::getConnectionInfo('wire');
+}

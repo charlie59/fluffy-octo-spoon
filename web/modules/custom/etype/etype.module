@@ -1,0 +1,279 @@
+<?php
+
+use Drupal\user\Entity\User;
+
+/**
+ * @param $existing
+ * @param $type
+ * @param $theme
+ * @param $path
+ * @return array
+ */
+function etype_theme($existing, $type, $theme, $path) {
+  return [
+    'ada_compliance' => [
+      'variables' => [],
+      'template' => 'ada-compliance',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_attachments().
+ * css hides system login link.
+ *
+ * @param array $page
+ */
+function etype_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'etype/global-styling';
+  $page['#attached']['library'][] = 'etype/ada-compliance';
+}
+
+/**
+ * For ADA compliance, make sure images have alt & title tag.
+ *
+ * @param $variables
+ */
+function etype_preprocess_image(&$variables) {
+  if (empty($variables['alt'])) {
+    $variables['alt'] = "Article Image Alt Text";
+  }
+  if (empty($variables['title'])) {
+    $variables['title'] = "Article Image Title Text";
+  }
+}
+
+/**
+ * {@inheritdoc}
+ */
+function etype_e_editions() {
+
+  $logged_in = Drupal::currentUser()->isAuthenticated();
+  $config = Drupal::config('etype.adminsettings');
+
+  $v2 = $config->get('etype_v2');
+  $e_edition = $config->get('etype_e_edition');
+  $pub = $config->get('etype_pub');
+  $ptype = $config->get('etype_ptype');
+
+  switch ($v2) {
+    case 1:
+      $base_url = "http://etype.wecode4u.com/";
+      break;
+
+    default;
+      $base_url = "https://etypeservices.com/";
+
+  }
+
+  $config = Drupal::config('system.site');
+  $site = $config->get('name');
+
+  /* because Lutcher has a comma */
+  if (strpos($e_edition, '|') !== FALSE) {
+    $items = explode(',', $e_edition);
+    $pubs = explode(',', $pub);
+    $ptypes = explode(',', $ptype);
+  } else {
+    $items = [$e_edition];
+    $pubs = [$pub];
+    $ptypes = [$ptype];
+  }
+
+  $e_editions = [];
+  $ptr = 0;
+  foreach ($items as $item) {
+    $arr = explode('|', $item);
+    if (isset($arr[1])) {
+      $site = trim($arr[1]);
+    }
+
+    $ar2 = preg_split("/ID[0-9]+/", $arr[0]); // make LandingImage directory name
+    $imagedir = trim($ar2[0]);
+    $e_editions[$ptr]['image'] = $base_url . 'LandingPageImages/' . $imagedir .
+      '/currentpg1.jpg';
+
+    if (isset($pubs[$ptr])) {
+      $pub = trim($pubs[$ptr]);
+    }
+    if (isset($ptypes[$ptr])) {
+      $ptype = trim($ptypes[$ptr]);
+    }
+    $e_edition = trim($arr[0]);
+
+    if ($logged_in > 0) {
+      if (!empty ($pub)) {
+        $account = Drupal\user\Entity\User::load(Drupal::currentUser()->id());
+        $name = $account->get('name')->value;
+        $path = $base_url . 'ReadTheEdition.aspx?Username=' . $name . "&Pub=" . $pub . "&PType=" . $ptype;
+      } else {
+        $path = $base_url . $e_edition . '/';
+      }
+    } else {
+      $path = $base_url . $e_edition . '/';
+    }
+    $e_editions[$ptr]['site_name'] = trim($site);
+    $e_editions[$ptr]['path'] = $path;
+    $e_editions[$ptr]['path_anon'] = $base_url . $e_edition . '/';
+    $e_editions[$ptr]['sub_link'] = $base_url . $e_edition . "/default.aspx?PubID=" . $pub;
+    $ptr++;
+  }
+  return $e_editions;
+}
+
+/**
+ * {@inheritdoc}
+ *This sets up the logged out e-Edition path
+ */
+function etype_menu_links_discovered_alter(&$links) {
+  $e_editions = etype_e_editions();
+  $links['etype.e_edition']['url'] = $e_editions[0]['path_anon'];
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function etype_form_alter(&$form, &$form_state, $form_id) {
+  /* Set default author information. */
+  if (!preg_match("/^node_delete.+$/", $form_id)) {
+    if (preg_match("/^node_.+form$/", $form_id)) {
+      $nid = $form_state->getformObject()->getEntity()->id();
+      if (is_null($nid)) {
+        /* only on new nodes */
+        $config = Drupal::config('etype.adminsettings');
+        $uid = $config->get('author');
+        $user = Drupal::currentUser();
+        $roles = $user->getRoles();
+        if ($uid > 0 && in_array_any(['administrator', 'editor'], $roles)) {
+          $author = User::load($uid);
+          $name = $author->getAccountName();
+          $form['#attached']['drupalSettings']['etype']['author'] = $name . ' (' . $uid . ')';
+          $form['#attached']['library'][] = 'etype/etype';
+        }
+      }
+    }
+  }
+
+  /* Process Video Add form. */
+  if ($form_id == "node_video_form") {
+    if (isset ($form["field_mt_bg_video_youtube"])) {
+      $form['#attached']['library'][] = 'etype/etype-video';
+      $form["field_mt_bg_video_youtube"]["#prefix"] = "
+<p><em>The next three fields only need to be filled out if \"Front Page Slideshow\" (under CUSTOM PUBLISHING OPTIONS) is checked. The defaults should work fine.</em></p>";
+    }
+  }
+}
+
+/**
+ * Implements hook_user_login()
+ *
+ * @param $account
+ * Set cookie by role for caching/proxy serving
+ */
+function etype_user_login($account) {
+  $roles = Drupal::currentUser()->getRoles();
+  $check = in_array_any([
+    'administrator',
+    'Editor',
+    'editor',
+    'Reporter'
+  ], $roles);
+  if ($check == 1) {
+    setcookie('nocache', '1', 0, '/');
+  } else {
+    $check = in_array_any(['authenticated user'], $roles);
+    if ($check == 1) {
+      setcookie('nocache', '2', 0, '/');
+    }
+  }
+}
+
+/**
+ * Implements hook_user_logout().
+ * Remove nocache cookie
+ */
+function etype_user_logout($account) {
+  // Set cookie in the past and then remove it.
+  $request_time = Drupal::time()->getRequestTime();
+  setcookie('nocache', '', $request_time - 3600, '/');
+  unset($_COOKIE['nocache']);
+}
+
+/**
+ * Implements hook_library_info_build()
+ * Left as example
+ * function etype_library_info_build() {
+ * $config = Drupal::config('etype.adminsettings');
+ * $mercolocal_id = $config->get('mercolocal_id');
+ * $libraries = [];
+ * $libraries['etype/mercolocal'] = [
+ * 'version' => '1.x',
+ * 'js' => [
+ * 'https://www.mercolocal.com/js/Embed.js?h=600&amp;w=300&amp;Scroll=v&amp;affiliateId=' .
+ * $mercolocal_id => [
+ * 'type' => 'external',
+ * 'attributes' => [
+ * 'id' => 'MercoLocal-script',
+ * 'data-active' => 'businesses',
+ * ],
+ * ],
+ * ],
+ * ];
+ * return $libraries;
+ * }
+ */
+
+/**
+ * Helper to split string on word boundary.
+ * {@inheritdoc}
+ */
+function substrwords($text, $maxchar, $end = '...') {
+  if (strlen($text) > $maxchar || $text == '') {
+    $words = preg_split('/\s/', $text);
+    $output = '';
+    $i = 0;
+    while (1) {
+      $length = strlen($output) + strlen($words[$i]);
+      if ($length > $maxchar) {
+        break;
+      } else {
+        $output .= " " . $words[$i];
+        ++$i;
+      }
+    }
+    $output .= $end;
+  } else {
+    $output = $text;
+  }
+  return $output;
+}
+
+/**
+ * Helper function.
+ *
+ * @param $needles
+ * @param $haystack
+ * @return bool
+ */
+function in_array_any($needles, $haystack) {
+  return (bool) (array_intersect($needles, $haystack));
+}
+
+/**
+ * Get the fields associated with selected node type.
+ *
+ * @param $nodeType
+ *   The node type for which to get fields.
+ * @return array
+ */
+function getFields($nodeType) {
+  $fields["None"] = "None";
+  if (!empty($nodeType)) {
+    $entityManager = Drupal::service('entity_field.manager');
+    $fieldDefinitions = $entityManager->getFieldDefinitions('node', $nodeType);
+    foreach ($fieldDefinitions as $k => $v) {
+      $fields[$k] = $k;
+    }
+  }
+  return $fields;
+}

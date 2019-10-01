@@ -1,0 +1,25 @@
+system.admin_config_etype:
+  title: 'eType'
+  route_name: system.admin_config_etype
+  parent: system.admin_config
+  description: 'eType Configuration'
+  position: left
+  weight: -20
+
+etype.admin_settings:
+  title: 'eType Settings'
+  parent: system.admin_config_etype
+  description: 'Configure eType settings, including e-Edition, weather code, and MercoLocal id.'
+  route_name: etype.admin_settings_form
+
+etype.ada_compliance:
+  title: 'ADA Compliance'
+  weight: 10
+  route_name: etype.ada_compliance
+  menu_name: footer
+
+etype.ada_compliance_news+:
+  title: 'ADA Compliance'
+  weight: 10
+  route_name: etype.ada_compliance
+  menu_name: subfooter-menu

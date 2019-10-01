@@ -1,0 +1,19 @@
+etype_classified_importer.admin_settings:
+  path: '/admin/config/etype_classified_importer/adminsettings'
+  defaults:
+    _form: '\Drupal\etype_classified_importer\Form\EtypeClassifiedImporterConfigForm'
+    _title: 'eType Classified Importer Configuration'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+
+etype_classified_importer.classified_import:
+  path: '/admin/content/classified_import'
+  defaults:
+    _title: 'Import Classified Ads'
+    _controller: '\Drupal\etype_classified_importer\Controller\ImportClassifiedController::importClassifiedXml'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
