@@ -124,16 +124,16 @@
         },
         {
             "name": "chi-teck/drupal-code-generator",
-            "version": "1.30.5",
+            "version": "1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chi-teck/drupal-code-generator.git",
-                "reference": "c59c31ee6d8eefe76a5d367feef902e259c90c7b"
+                "reference": "f994157721f238175be90171f0ccc1c0aa17c276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/c59c31ee6d8eefe76a5d367feef902e259c90c7b",
-                "reference": "c59c31ee6d8eefe76a5d367feef902e259c90c7b",
+                "url": "https://api.github.com/repos/Chi-teck/drupal-code-generator/zipball/f994157721f238175be90171f0ccc1c0aa17c276",
+                "reference": "f994157721f238175be90171f0ccc1c0aa17c276",
                 "shasum": ""
             },
             "require": {
@@ -141,7 +141,7 @@
                 "php": ">=5.5.9",
                 "symfony/console": "^3.4 || ^4.0",
                 "symfony/filesystem": "^2.7 || ^3.4 || ^4.0",
-                "twig/twig": "^1.38.2 || ^2.10"
+                "twig/twig": "^1.41 || ^2.12"
             },
             "bin": [
                 "bin/dcg"
@@ -165,7 +165,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal code generator",
-            "time": "2019-10-27T14:27:26+00:00"
+            "time": "2019-12-07T16:54:31+00:00"
         },
         {
             "name": "composer/installers",
@@ -1879,16 +1879,16 @@
         },
         {
             "name": "doctrine/persistence",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/persistence.git",
-                "reference": "43526ae63312942e5316100bb3ed589ba1aba491"
+                "reference": "fb81d2bccc0b891393367c8bb1fcc4cf8efcc761"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/persistence/zipball/43526ae63312942e5316100bb3ed589ba1aba491",
-                "reference": "43526ae63312942e5316100bb3ed589ba1aba491",
+                "url": "https://api.github.com/repos/doctrine/persistence/zipball/fb81d2bccc0b891393367c8bb1fcc4cf8efcc761",
+                "reference": "fb81d2bccc0b891393367c8bb1fcc4cf8efcc761",
                 "shasum": ""
             },
             "require": {
@@ -1903,19 +1903,20 @@
                 "doctrine/common": "<2.10@dev"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^5.0",
-                "phpstan/phpstan": "^0.8",
+                "doctrine/coding-standard": "^6.0",
+                "phpstan/phpstan": "^0.11",
                 "phpunit/phpunit": "^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.2.x-dev"
+                    "dev-master": "1.3.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Doctrine\\Common\\": "lib/Doctrine/Common"
+                    "Doctrine\\Common\\": "lib/Doctrine/Common",
+                    "Doctrine\\Persistence\\": "lib/Doctrine/Persistence"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1957,7 +1958,7 @@
                 "orm",
                 "persistence"
             ],
-            "time": "2019-04-23T12:39:21+00:00"
+            "time": "2019-12-12T14:01:13+00:00"
         },
         {
             "name": "doctrine/reflection",
@@ -4215,16 +4216,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.4.1",
+            "version": "6.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11"
+                "reference": "dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0895c932405407fd3a7368b6910c09a24d26db11",
-                "reference": "0895c932405407fd3a7368b6910c09a24d26db11",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5",
+                "reference": "dbc2bc3a293ed6b1ae08a3651e2bfd213d19b6a5",
                 "shasum": ""
             },
             "require": {
@@ -4239,12 +4240,13 @@
                 "psr/log": "^1.1"
             },
             "suggest": {
+                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
                 "psr/log": "Required for using the Log middleware"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -4277,7 +4279,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-23T15:58:00+00:00"
+            "time": "2019-12-07T18:20:45+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -4877,16 +4879,16 @@
         },
         {
             "name": "pear/pear_exception",
-            "version": "v1.0.0",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pear/PEAR_Exception.git",
-                "reference": "8c18719fdae000b690e3912be401c76e406dd13b"
+                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/8c18719fdae000b690e3912be401c76e406dd13b",
-                "reference": "8c18719fdae000b690e3912be401c76e406dd13b",
+                "url": "https://api.github.com/repos/pear/PEAR_Exception/zipball/dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
+                "reference": "dbb42a5a0e45f3adcf99babfb2a1ba77b8ac36a7",
                 "shasum": ""
             },
             "require": {
@@ -4902,9 +4904,9 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "PEAR": ""
-                }
+                "classmap": [
+                    "PEAR/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "include-path": [
@@ -4928,7 +4930,7 @@
             "keywords": [
                 "exception"
             ],
-            "time": "2015-02-10T20:07:52+00:00"
+            "time": "2019-12-10T10:24:42+00:00"
         },
         {
             "name": "psr/container",
@@ -7747,16 +7749,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.4",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
-                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/62e8fc2dc550e5d6d8c9360c7721662670f58149",
+                "reference": "62e8fc2dc550e5d6d8c9360c7721662670f58149",
                 "shasum": ""
             },
             "require": {
@@ -7767,7 +7769,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0"
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
             },
             "type": "library",
             "extra": {
@@ -7799,7 +7801,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-08-30T08:44:50+00:00"
+            "time": "2019-12-11T14:44:42+00:00"
         },
         {
             "name": "composer/composer",
@@ -8043,11 +8045,11 @@
         },
         {
             "name": "drupal/coder",
-            "version": "8.3.6",
+            "version": "8.3.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coder.git",
-                "reference": "4337ddf58d28dbdee4e1367bf71ee13393ab9820"
+                "reference": "c11c2957653bdbfd68adc851692d094b43d39221"
             },
             "require": {
                 "ext-mbstring": "*",
@@ -8056,7 +8058,7 @@
                 "symfony/yaml": ">=2.0.5"
             },
             "require-dev": {
-                "phpunit/phpunit": ">=3.7 <6"
+                "phpunit/phpunit": "^4.0 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "phpcodesniffer-standard",
             "autoload": {
@@ -8076,7 +8078,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2019-08-09T09:27:26+00:00"
+            "time": "2019-12-07T16:00:28+00:00"
         },
         {
             "name": "fabpot/goutte",
