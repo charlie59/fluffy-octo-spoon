@@ -50,10 +50,11 @@ class WireContentAddController {
    * Add Wire Content.
    *
    * TODO: make Node Type configurable.
-   * TODO: Make Images work.
    *
    * @param int $nid
    *   Node Identifier.
+   * @param string $site
+   *   Site Identifier.
    *
    * @return array
    *   Markup.
@@ -62,7 +63,7 @@ class WireContentAddController {
    * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    * @throws \Drupal\Core\Entity\EntityStorageException
    */
-  public function addWireContent(int $nid) {
+  public function addWireContent(int $nid, string $site) {
     $check = _etype_wire_content_check_connection();
     /* throw Exception and return empty page with message if the wire database setings are missing */
     try {
@@ -81,6 +82,7 @@ class WireContentAddController {
     $result = $db->select('node', 'n')
       ->fields('n')
       ->condition('nid', $nid, '=')
+      ->condition('site', $db->escapeLike($site), 'LIKE')
       ->execute()
       ->fetchAll();
     $data = $result[0];

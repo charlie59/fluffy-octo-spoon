@@ -14,23 +14,6 @@ use Drupal\user\Entity\User;
 use Exception;
 
 /**
- * Class WireConnectionException.
- *
- * @package Drupal\etype_wire_content\Form
- */
-class WireConnectionException extends Exception {
-
-  /**
-   * WireConnectionException constructor.
-   */
-  public function __construct() {
-    $message = new TranslatableMarkup('Wire database connection settings are missing. Please add them in this site’s settings.php.');
-    parent::__construct($message);
-  }
-
-}
-
-/**
  * Class EtypeWireContentConfigForm.
  *
  * @package Drupal\etype_wire_content\Form
@@ -113,7 +96,7 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
    * Get the fields associated with selected node type.
    *
    * Using to set the node object.
-   * Getting strange errors when attemtpting to loogk over field definitions.
+   * Getting strange errors when attemtpting to loop over field definitions.
    *
    * Apparently node::load is better than any entityFieldQuery.
    */
@@ -126,7 +109,7 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
     $nid = reset($nids);
     if (isset($nid)) {
       $node = Node::Load($nid);
-      if (is_object($node)) {
+      if (!is_object($node)) {
         $this->node = $node;
         /* Gives strange array_flip error */
         /* $arr = $node->getFieldDefinitions();
@@ -228,7 +211,7 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
     $form['groups']['groups'] = [
       '#title' => t('Site Group(s)'),
       '#multiple' => TRUE,
-      '#description' => t("The group(s) that this site belongs to. Sites can belong to one or more groups and will only import wire content from checked groups."),
+      '#description' => t("The group(s) that this site belongs to. Sites can belong to one or more groups and exported wire content will be marked as belonging to checked groups."),
       '#weight' => '1',
       '#type' => 'checkboxes',
       '#options' => $options,
@@ -242,14 +225,14 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
 
     $form['settings']['nodeType'] = [
       '#type' => 'select',
-      '#title' => t('Choose which content type to import and export.'),
+      '#title' => t('Choose which content type to import and export'),
       '#default_value' => $this->conf->get('nodeType'),
       '#options' => $this->nodeTypeOptions,
     ];
 
     $form['settings']['author'] = [
       '#type' => 'entity_autocomplete',
-      '#title' => t('Default Author'),
+      '#title' => t('Default Author for imported content'),
       '#size' => 30,
       '#maxlength' => 60,
       '#target_type' => 'user',
@@ -263,7 +246,7 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
 
     $form['settings']['section'] = [
       '#title' => $this->t('Section'),
-      '#description' => 'Enter the section into which to import articles, ie "Wire Content".',
+      '#description' => 'Enter the Section with which to categorize imported articles.',
       '#type' => 'entity_autocomplete',
       '#target_type' => 'taxonomy_term',
       '#selection_handler' => 'default',
@@ -286,7 +269,7 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
     if (count($this->sections) > 1) {
       $form['settings']['sections'] = [
         '#type' => 'checkboxes',
-        '#title' => t('Choose which taxonomy terms to use to filter exports.'),
+        '#title' => t('Choose which sections to export.'),
         '#default_value' => $this->conf->get('sections'),
         '#options' => $this->sections,
       ];
@@ -308,6 +291,23 @@ class EtypeWireContentConfigForm extends ConfigFormBase {
       ->set('sections', $form_state->getValue('sections'))
       ->set('section', $form_state->getValue('section'))
       ->save();
+  }
+
+}
+
+/**
+ * Class WireConnectionException.
+ *
+ * @package Drupal\etype_wire_content\Form
+ */
+class WireConnectionException extends Exception {
+
+  /**
+   * WireConnectionException constructor.
+   */
+  public function __construct() {
+    $message = new TranslatableMarkup('Wire database connection settings are missing. Please add them in this site’s settings.php.');
+    parent::__construct($message);
   }
 
 }

@@ -114,7 +114,7 @@ class WireContentExportController {
               'created' => $node->get('created')->value,
               'changed' => $node->get('changed')->value,
               'uuid' => $node->get('uuid')->value,
-              'site' => Drupal::request()->getSchemeAndHttpHost(),
+              'site' => Drupal::request()->getHost(),
               'site_name' => $site_name,
               'cluster' => $groups,
             ])

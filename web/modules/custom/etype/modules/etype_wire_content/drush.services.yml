@@ -1,0 +1,5 @@
+services:
+  etype_wire_content.commands:
+    class: \Drupal\etype_wire_content\Commands\EtypeWireContentCommands
+    tags:
+      - { name: drush.command }

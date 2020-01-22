@@ -1,0 +1,12 @@
+{
+  "name": "drupal/etype_wire_content",
+  "description": "Export Wire Content.",
+  "type": "drupal-drush",
+  "extra": {
+    "drush": {
+      "services": {
+        "drush.services.yml": "^9"
+      }
+    }
+  }
+}

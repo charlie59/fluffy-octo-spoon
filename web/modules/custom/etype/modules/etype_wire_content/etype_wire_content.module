@@ -2,9 +2,12 @@
 /**
  * @file
  * eType Wire Content module file.
+ *
+ * TODO: Make View pick up settings for Groups and Site Name.
  */
 
 use Drupal\Core\Database\Database;
+use Drupal\etype_wire_content\Controller\WireContentExportController;
 
 /**
  * Callback function for the cron job.
@@ -24,4 +27,14 @@ function _etype_wire_content_node_export() {
  */
 function _etype_wire_content_check_connection() {
   return (bool) Database::getConnectionInfo('wire');
+}
+
+/**
+ * @param \Drupal\node\NodeInterface $node
+ * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+ * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+ */
+function etype_wire_content_node_update(Drupal\node\NodeInterface $node) {
+  $exporter = new WireContentExportController();
+  $exporter->exportWireContent();
 }
