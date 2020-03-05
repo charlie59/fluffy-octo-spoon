@@ -39,7 +39,7 @@
         "drupal/console": "^1.0.2",
         "drupal/contact_block": "^1.4",
         "drupal/contest": "^1.0@alpha",
-        "drupal/core": "8.8.2",
+        "drupal/core": "^8.8.2",
         "drupal/dfp": "^1.0@alpha",
         "drupal/exclude_node_title": "^1.0",
         "drupal/features": "^3.7",
