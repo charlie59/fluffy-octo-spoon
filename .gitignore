@@ -24,3 +24,6 @@
 
 # Ignore Apache files
 .htaccess
+
+# Ignore composer.lock
+composer.lock
